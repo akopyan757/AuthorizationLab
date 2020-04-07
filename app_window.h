@@ -19,11 +19,12 @@ public:
     explicit AppWindow(QWidget *parent = nullptr);
     ~AppWindow();
 
-    AuthForm *authForm = new AuthForm();
-    UserForm *userForm = new UserForm();
+    AuthForm *authForm = nullptr;
+    UserForm *userForm = nullptr;
 
 public:
-    void openUserForm() const override;
+    void openAuthForm() override;
+    void openUserForm() override;
 
 private:
     Ui::AppWindow *ui;

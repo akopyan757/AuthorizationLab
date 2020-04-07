@@ -16,9 +16,9 @@ int main(int argc, char *argv[])
 
     qInfo(logInfo()) << "START APP";
 
+    w->openAuthForm();
     pr->setupApp(w);
     pr->setupAuthView(w->authForm);
-    pr->setupUserView(w->userForm);
 
     w->show();
     return a.exec();

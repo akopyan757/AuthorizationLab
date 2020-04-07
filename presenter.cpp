@@ -38,6 +38,6 @@ void Presenter::setupUserView(IUserView *view) {
 }
 
 void Presenter::openUserView() {
-    qInfo(logInfo()) << "OPEN USER VIEW";
     appView->openUserForm();
+    setupUserView(userView);
 }
