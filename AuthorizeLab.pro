@@ -16,17 +16,28 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    auth_window.cpp \
+    app_window.cpp \
+    auth_form.cpp \
+    logging_categories.cpp \
     main.cpp \
-    user_window.cpp
+    presenter.cpp \
+    user_form.cpp
 
 HEADERS += \
-    auth_window.h \
-    user_window.h
+    app_view.h \
+    app_window.h \
+    auth_form.h \
+    auth_view.h \
+    logging_categories.h \
+    main.h \
+    presenter.h \
+    user_form.h \
+    user_view.h
 
 FORMS += \
-    auth_window.ui \
-    user_window.ui
+    app_window.ui \
+    auth_form.ui \
+    user_form.ui
 
 TRANSLATIONS += \
     AuthorizeLab_ru_RU.ts
